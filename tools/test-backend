@@ -188,7 +188,7 @@ def main() -> None:
     sys.path.insert(0, os.path.dirname(TOOLS_DIR))
 
     default_parallel = os.cpu_count()
-
+    print("HERE!!!!!!", default_parallel)
     # Remove proxy settings for running backend tests
     os.environ["http_proxy"] = ""
     os.environ["https_proxy"] = ""
